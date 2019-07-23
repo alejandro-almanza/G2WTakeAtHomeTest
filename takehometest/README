@@ -1,0 +1,11 @@
+This is an average small Spring Boot App. 
+
+To build it you just need to perform a maven clean install, and it's executed as a 
+Spring Boot App that starts the usual Tomcat server using the default port (8080).
+An example to call the GET endpoint for getting the shortest route between to airports would be:
+
+http://localhost:8080/takehometest/shortestroute?origin=YYZ&destination=YVR
+
+where as you can imagine origin is the origin airport and destination, well... the destination. 
+It responds with a JSON that contains an array of airports that would describe the shortest route
+between the given to airports.
